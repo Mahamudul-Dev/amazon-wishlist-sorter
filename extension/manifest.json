@@ -1,0 +1,18 @@
+{
+  "name": "Amazon Wishlist Cookie Grabber",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["cookies", "activeTab", "storage", "scripting"],
+  "host_permissions": ["https://*.amazon.com/"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon-36.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-144.png"
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Amazon Cookies</title>
+    <style>
+      /* Basic Amazon theme colors */
+      :root {
+        --amazon-blue: #146eb4;
+        --amazon-orange: #ff9900;
+        --amazon-white: #fff;
+        --amazon-gray: #f8f8f8;
+        --amazon-dark-gray: #131921;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: var(--amazon-gray);
+        color: var(--amazon-dark-gray);
+        margin: 0;
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: var(--amazon-dark-gray);
+      }
+
+      #sendCookies {
+        background-color: var(--amazon-orange);
+        border: none;
+        color: var(--amazon-white);
+        padding: 12px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      #sendCookies:hover {
+        background-color: #f79c42;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      #sendCookies:active {
+        background-color: #e68a00;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      footer {
+        margin-top: 30px;
+        font-size: 14px;
+        color: var(--amazon-dark-gray);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Amazon Wishlist Sorter Sync Extension</h1>
+    <button id="sendCookies">Sync Cookies</button>
+
+    <footer>
+      <p>Developed by <a href="https://www.codejet.dev" target="_blank">CodejetDev</a></p>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

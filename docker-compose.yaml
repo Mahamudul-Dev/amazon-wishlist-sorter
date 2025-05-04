@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  backend:
+    image: mahamuduldev/amazon-wishlist-sorter-api
+    ports:
+      - "5050:5050"
+    environment:
+      - NODE_ENV=production
+      - API_PORT=5050
+      - AMAZON_URL=https://www.amazon.com
+    restart: always
+
+  frontend:
+    image: mahamuduldev/amazon-wishlist-sorter-app
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
